@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "control-clientes-d73fa": {
+      "hosting": {
+        "control-clientes": [
+          "control-clientes-d73fa"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "control-clientes-d73fa"
+  }
+}

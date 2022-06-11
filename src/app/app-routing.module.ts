@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AgregarClienteComponent } from './componentes/agregar-cliente/agregar-cliente.component';
 import { ConfiguracionComponent } from './componentes/configuracion/configuracion.component';
 import { EditarClienteComponent } from './componentes/editar-cliente/editar-cliente.component';
 import { LoginComponent } from './componentes/login/login.component';
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path: 'registrarse', component: RegistroComponent},
   {path: 'configuracion', component: ConfiguracionComponent},
   {path: 'cliente/editar/:id', component: EditarClienteComponent},
+  {path: 'cliente/agregar', component: AgregarClienteComponent},
   {path: '**', component: NoEncontradoComponent}
 ];
 

@@ -18,6 +18,7 @@ import { environment } from '../environments/environment';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { ClienteServicio } from './servicios/cliente.service';
 import { AgregarClienteComponent } from './componentes/agregar-cliente/agregar-cliente.component';
+import { LoginService } from './servicios/login.service';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,7 @@ import { AgregarClienteComponent } from './componentes/agregar-cliente/agregar-c
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFirestore(() => getFirestore())
   ],
-  providers: [ClienteServicio],
+  providers: [ClienteServicio, LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
